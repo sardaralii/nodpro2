@@ -1,1 +1,32 @@
-- uses: sardaralii/nodepro1/blob/master/.github/workflows/node.yml
+name: callerworkflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      calledworkflow_name: 
+        description: 'called workflow'
+        required: true
+        default: 'calledworkflow'
+      Calledworkflow_github_account:
+       description: 'Github Account Owner'
+       required: true
+       default: 'rekhuGopal'
+      Calledworkflow_repo_github:
+       description: 'githubrepo name'
+       required: true
+       default: 'invokeGithubactionCalled'
+       
+  jobs:
+    build:
+    
+      run-on: ubuntu-latest
+      env:
+        pat_token: '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'
+        parameter1: '1234567'
+        parameter2: 'testStringWithoutSpace'
+        
+      steps
+        - uses: action/checkout@v3
+        
+    
+     
