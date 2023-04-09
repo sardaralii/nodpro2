@@ -15,7 +15,7 @@ jobs:
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: sardarali
-          repo: demo-backend
+          repo: nodepro1
           github_token: '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'
           workflow_file_name: main.yml
       - name: Deploy Web App
