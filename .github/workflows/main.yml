@@ -16,7 +16,7 @@ jobs:
         with:
           owner: sardaralii
           repo: nodepro1
-          github_token: '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'
+          github_token: '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'
           workflow_file_name: node.yml
       - name: Deploy Web App
         run: |
