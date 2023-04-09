@@ -14,7 +14,7 @@ jobs:
           sleep 10s
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
-          owner: sardarali
+          owner: sardaralii
           repo: nodepro1
           github_token: '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'
           workflow_file_name: node1.yml
