@@ -5,7 +5,6 @@ on:
       - main
 jobs:
   build:
-    name: Run Web App
     runs-on: ubuntu-latest
     steps:
       - name: Build Web App
@@ -14,7 +13,7 @@ jobs:
           sleep 10s
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
-          owner: sardaralii
+          owner: sardarali
           repo: nodepro1
           github_token: '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'
           workflow_file_name: /.github/workflows/node.yml
